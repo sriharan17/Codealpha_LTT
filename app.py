@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, request
 from deep_translator import GoogleTranslator
 
-app = Flask(__name__, template_folder='../template', static_folder='../static')
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
